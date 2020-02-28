@@ -1,7 +1,7 @@
 # cube-rs
 [![license: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/vcs222/cube-rs/blob/master/LICENSE)
 
-Rubik's Cube Scramble Generator
+**cube-rs** is a minimalist Rubik's cube scramble generator.
 
 ## Install
 Build a release version and install it globally:
