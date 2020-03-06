@@ -1,5 +1,5 @@
-use std::env;
 use rand::Rng;
+use std::env;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -9,7 +9,9 @@ fn main() {
         25
     };
 
-    let directions = ["R", "R'", "L", "L'", "U", "U'", "D", "D'", "F", "F'", "B", "B'"];
+    let directions = [
+        "R", "R'", "L", "L'", "U", "U'", "D", "D'", "F", "F'", "B", "B'",
+    ];
     let mut sequence: String = String::from("");
     let mut next = 0;
     let mut from = 0;
@@ -18,7 +20,7 @@ fn main() {
     while len > 0 {
         next = (next + rand::thread_rng().gen_range(from, to)) % 12;
         sequence += directions[next];
-        
+
         if next % 2 == 1 {
             from = 1;
             to = 11;
